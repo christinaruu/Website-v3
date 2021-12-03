@@ -1,0 +1,302 @@
+:root {
+    --primary: #8DB58F;
+    --secondary: #30343F; 
+    --gray: #f5f5f5;
+}
+
+html {
+    height: 100%;
+    font-family: sans-serif; 
+}
+
+nav {
+    padding-bottom: 110px;
+    padding-top: 50px;
+}
+
+.nav-logo {
+    float: left; 
+}
+
+.nav-links {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 16px; 
+    float: right;
+    margin-left: 48px;
+    letter-spacing: 2px;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--primary);
+    color: var(--primary);
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Lora'; 
+    font-size: 40px; 
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.font-green {
+    color: var(--primary); 
+}
+
+.font-white {
+    color: white;
+}
+
+.font-bold {
+    font-weight: 600; 
+}
+
+h2 {
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 22px; 
+    color: var(--secondary);
+}
+
+h3 {
+    font-family: 'Nunito';
+    font-weight: 100;
+    font-size: 14px;
+}
+
+h4 {
+    font-family: 'Lora';
+    font-size: 36px;
+    font-weight: 600; 
+    color: var(--secondary);
+}
+
+img {
+    border-radius: 8px;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding-right: 15px;
+  }
+
+.column-project-text {
+    float: left;
+  width: 25%;
+  padding-right: 48px;
+}
+
+.row:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: underline;
+    font-family: 'Nunito';
+    font-size: 22px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-family: 'Nunito';
+    font-size: 20px; 
+    font-weight: 300;
+    color: var(--secondary);
+    line-height: 28px;
+}
+
+footer {
+    background-color: var(--secondary);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    width: 100%;
+}
+
+.margin {
+    margin-left: 235px;
+    margin-right: 235px;
+}
+
+.fixed {
+    width: 60%;
+    padding-top: 170px;
+}
+
+.flex-item {
+    flex-grow: 1; 
+    padding-left: 100px;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 150px;
+    overflow: hidden;
+    height: 700px;
+}
+
+.fixed-no-padding {
+    width: 50%;
+}
+
+.fixed-intro {
+    width: 80%;
+    padding-right: 30px;
+    padding-bottom: 36px;
+}
+
+.flex-item-intro {
+    flex-grow: 1; 
+    padding-left: 150px;
+    padding-top: 25px;
+}
+
+.container-intro {
+    display: flex;
+}
+
+.container-project {
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.fixed-project {
+    min-width: 200px;
+    padding-right: 150px;
+    position: relative;
+    top: -32px;
+}
+
+.flex-item-project {
+    flex-grow: 1; 
+    padding-left: 100px;
+}
+
+.project-cards {
+    margin-bottom: 50px;
+}
+
+.img-zoom {
+    overflow: hidden;
+    height: 650px;
+}
+
+.img-zoom img{
+    transition: transform .5s ease;
+}
+
+.project-cards:hover img {
+    transform: scale(1.1)
+}
+
+.container:hover img{
+    transform: scale(1.1)
+}
+
+  .tag {
+      background-color: var(--gray);
+      padding-left: 12px; 
+      padding-right: 12px;
+      border-radius: 8px;
+      display: inline-block;
+      color: var(--secondary);
+      margin-right: 10px;
+      line-height: 12px;
+  }
+
+  
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    border-color: var(--primary);
+    border-style: solid;
+    transition: all .2s ease-in-out;
+  }
+  
+  #myBtn:hover {
+    border-radius: 50%; /* Rounded corners */
+    transform: scale(1.1,1.1);
+  }
+
+  .test {
+      background-color: red;
+      height: 500px;
+  }
+
+  
+.next-project-card {
+    position: relative;
+}
+
+.next-project-card-text {
+    bottom: 36px;
+    left: 56px;
+    position: absolute;
+}
+
+button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    background-color: var(--secondary);
+    border-radius: 3px;
+    font-family: "Nunito";
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.back-to-top {
+    padding: 0; 
+    background-color: white;
+    border-color: 3px solid var(--secondary);
+    font-size: 0;
+}
+
+button:hover {
+    background-color: #595D65;
+    cursor: pointer;
+}
+
+.list-card {
+    background-color: var(--gray);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    float: left;
+    border-radius: 3px;
+}
+
+li {
+    font-family: 'Nunito';
+    font-size: 20px; 
+    font-weight: 200;
+    color: var(--secondary);
+    line-height: 35px;
+}
