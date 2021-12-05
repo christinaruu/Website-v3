@@ -293,3 +293,11 @@ li {
     width: 10%;
     margin-top: 20px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .margin {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
