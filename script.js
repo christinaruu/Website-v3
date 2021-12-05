@@ -18,35 +18,32 @@ function slidethem() { /* slide fade function */
 	if(n == sDiv) { /* check if at the last div */
 		setTimeout(slideit,1); /* slide up first div fast */
 	} else {
-		setTimeout(slideit,2000); /* slide up every 1000ms */
+		setTimeout(slideit,3000); /* slide up every 1000ms */
 	}
 } )();
 
 
 AOS.init({
-    offset: 100, // offset (in px) from the original trigger point
+    offset: 200, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 1000 // values from 0 to 3000, with step 50ms
+    duration: 1350 // values from 0 to 3000, with step 50ms
   });
 
+/*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+  var height = $(window).scrollTop();
+  if (height > 100) {
+      $('#back2Top').fadeIn();
+  } else {
+      $('#back2Top').fadeOut();
+  }
+});
+$(document).ready(function() {
+  $("#back2Top").click(function(event) {
+      event.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+  });
 
-
-            //Get the button
-            var mybutton = document.getElementById("myBtn");
-            
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
-            
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
+});
+/*Scroll to top when arrow up clicked END*/
