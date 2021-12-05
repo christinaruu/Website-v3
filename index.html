@@ -25,14 +25,14 @@
 <body>
     <div class="margin">
 
-        <button class="back-to-top" onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/Back_to_top_arrow.png" alt="Back to top arrow" width="32px"></button>
+        <a id="back2Top" title="Back to top" href="#"> <img src="Images/Back_to_top_arrow.png" alt="Back to top arrow" width="32px"></a>
 
     <nav>
         <a class="nav-logo" href="index.html"><img src="Images/favicon.png" alt="Logo" width = "48px"></a>
 
         <a class="nav-links" href="/Files/Christina Ru Resume.pdf" target="_blank">RESUME</a>
         <a class="nav-links" href="me.html">ME</a>
-        <a class="nav-links" href="index.html">WORK</a>
+        <a class="nav-links" href="#first-project">WORK</a>
     </nav>
 
     <!--Styling for text animation-->
@@ -56,6 +56,10 @@
     font-size: 48px; 
     font-weight: 100;
     color: var(--secondary);
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
     </style>
     
@@ -97,25 +101,27 @@
             </div>
         </div>
 
-        <div data-aos="fade-up">
-            <a style="text-decoration: none" href="snappea.html">
-                <div class = "project-cards" style="margin-top: 125px">
-                    <div class="tag">
-                        <h3>UX UI DESIGN</h3>
+        <a id="first-project" href="">
+            <div data-aos="fade-up">
+                <a style="text-decoration: none" href="snappea.html">
+                    <div class = "project-cards" style="margin-top: 125px">
+                        <div class="tag">
+                            <h3>UX UI DESIGN</h3>
+                        </div>
+                        <div class="tag">
+                            <h3>INTERNSHIP</h3>
+                        </div>
+                        <br>
+                        <h1 class="font-bold">SnapPea Design Internship</h1>
+                        <p>Elevating designs from boring to delightful</p>
+                        <br>
+                        <div class="img-zoom">
+                        <img src="Images/SnapPea thumbnail.png" style="width:100%" alt="SnapPea Design internship thumbnail">
                     </div>
-                    <div class="tag">
-                        <h3>INTERNSHIP</h3>
-                    </div>
-                    <br>
-                    <h1 class="font-bold">SnapPea Design Internship</h1>
-                    <p>Elevating designs from boring to delightful</p>
-                    <br>
-                    <div class="img-zoom">
-                    <img src="Images/SnapPea thumbnail.png" style="width:100%" alt="SnapPea Design internship thumbnail">
                 </div>
+            </a>
             </div>
         </a>
-        </div>
 
         <div data-aos="fade-up">
             <a style="text-decoration: none" href="uwbp.html">
@@ -188,6 +194,7 @@
 
     <footer>
         <div class='margin'>
+            <img src="Images/favicon.png" width="64px" alt="" style="margin-bottom:25px">
             <h1 class="font-white">Thanks for stopping by!</h1>
             <br>
             <a style="padding-right:32px" class="font-white" href="mailto:n.christinaru@gmail.com?Subject=">Email</a>
