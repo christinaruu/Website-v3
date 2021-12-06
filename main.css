@@ -344,6 +344,7 @@ color: var(--secondary);
     }
     .fixed-intro {
         width: 80%;
+        padding-right: 10%;
     }
 
     .flex-item-intro {
