@@ -285,7 +285,6 @@ color: var(--secondary);
         margin-top: 0;
         overflow: hidden;
         height: 70%;
-        background-color: red;
     }
     .img-zoom {
         overflow: hidden;
