@@ -8,7 +8,7 @@
     <meta name="description" content="Christina Ru - University of Waterloo Engineering student / current Product Designer at SnapPea Design.">
     <meta name="author" content="Christina Ru">
 
-    <title>Christina Ru - Home</title>
+    <title>About Me</title>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="main.css">
@@ -24,7 +24,7 @@
 <body>
     <div class="margin">
 
-      <button class="back-to-top" onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/Back_to_top_arrow.png" alt="Back to top arrow" width="32px"></button>
+      <a id="back2Top" title="Back to top" href="#"> <img src="Images/Back_to_top_arrow.png" alt="Back to top arrow" width="32px"></a>
       
         <nav>
             <a class="nav-logo" href="index.html"><img src="Images/favicon.png" alt="Logo" width = "48px"></a>
@@ -46,7 +46,9 @@
               
               
               <br><br>
-              <a href="Files/Christina Ru Resume.pdf" target="blank">Resume</a>
+              <button style="margin-bottom: 48px;" onclick="window.open('Files/Christina Ru Resume.pdf','blank')">
+                View Resume 
+            </button>
           </div>
           <div class="flex-item-intro">
             <img src="Images/me_image.png" width="100%" alt="Photo of Christina Ru">
@@ -76,15 +78,18 @@
         <div data-aos="fade-up">
           <br><br><br><br><br><br>
           <h4>My community</h4>
-            <img src="Images/uwbp.png" style="width:100%" alt="">
+            <a href="https://uwblueprint.org/" target="blank">
+                <img src="Images/uwbp (1).png" style="width:100%" alt="">
+            </a>
         </div>
-
-        <div style="height:200px"></div>
 
     </div>
 
+    <div style="height:200px"></div>
+
     <footer>
         <div class='margin'>
+          <img src="Images/favicon.png" width="64px" alt="" style="margin-bottom:25px">
             <h1 class="font-white">Thanks for stopping by!</h1>
             <br>
             <a style="padding-right:32px" class="font-white" href="mailto:n.christinaru@gmail.com?Subject=">Email</a>
