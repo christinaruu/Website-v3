@@ -59,45 +59,32 @@ h1 {
 }
 
 h2 {
+    font-size: 22px; 
     font-family: 'Lora';
     font-weight: 700;
     color: var(--secondary);
 }
 
 h3 {
+    font-size: 14px;
     font-family: 'Nunito';
     font-weight: 100;
 }
 
 h4 {
+    font-size: 36px;
     font-family: 'Lora';
     font-weight: 600; 
     color: var(--secondary);
 }
 
+p {
+    font-size: 20px; 
+    line-height: 28px;   
+}
+
 img {
     border-radius: 8px;
-}
-
-.row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding-right: 15px;
-  }
-
-.column-project-text {
-    float: left;
-  width: 25%;
-  padding-right: 48px;
-}
-
-.row:after {
-    content: "";
-  display: table;
-  clear: both;
 }
 
 a {
@@ -133,11 +120,6 @@ footer {
 
 .fixed-no-padding {
     width: 50%;
-}
-
-.container-intro {
-    display: flex;
-    width: 100%;
 }
 
 .img-zoom img{
@@ -254,29 +236,12 @@ color: var(--secondary);
         font-size: 28px;
         margin-bottom: 0;
     }
-    p {
-        font-size: 14px; 
-        line-height: 20px;   
-    }
-    h2 {
-        font-size: 18px; 
-    }
-    h3 {
-        font-size: 10px;
-    }
-    h4 {
-        font-size: 24px;
-    }
     .thisis {
-        height: 188px;
+        height: 105px;
     }
-    
-    .fixed-intro {
-        width: 80%;
-    }
+
     .flex-item-intro {
         flex-grow: 1; 
-        padding-left: 10%;
         padding-top: 40px;
     }
     .container {
@@ -309,6 +274,14 @@ color: var(--secondary);
         left: 5%;
         position: absolute;
     }
+
+    .column {
+
+    }
+
+    .column-project-text {
+
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -317,22 +290,10 @@ color: var(--secondary);
         margin-left: 6%;
         margin-right: 6%;
     }
-    p {
-        font-size: 20px; 
-        line-height: 28px;   
-    }
+    
     h1 {
         font-size: 40px;
         margin-bottom: 0;
-    }
-    h2 {
-        font-size: 22px; 
-    }
-    h3 {
-        font-size: 14px;
-    }
-    h4 {
-        font-size: 36px;
     }
     .thisis {
         height: 180px;
@@ -378,6 +339,27 @@ color: var(--secondary);
         position: absolute;
     }
     
+.column-project-text {
+    float: left;
+  width: 25%;
+  padding-right: 48px;
+}
+
+.row:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+    display: flex;
+  }
+
+  .container-intro {
+    display: flex;
+    width: 100%;
+}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
